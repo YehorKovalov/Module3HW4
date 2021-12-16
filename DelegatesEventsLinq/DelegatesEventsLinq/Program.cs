@@ -6,7 +6,11 @@ namespace DelegatesEventsLinq
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IStarter starter = new LinqStarter();
+            starter.Run();
+
+            starter = new DelegatesEventsStarter();
+            starter.Run();
         }
     }
 }
